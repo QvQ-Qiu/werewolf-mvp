@@ -1,0 +1,8 @@
+[
+  {"id": "V01", "role": "villager", "name": "逻辑盘", "tendency": "analyze", "priority": 4, "weight": 1.2, "prompt_hint": "盘票型与发言矛盾"},
+  {"id": "V02", "role": "villager", "name": "跟风", "tendency": "follow", "priority": 2, "weight": 1.3, "prompt_hint": "跟多数票，少扛推"},
+  {"id": "V03", "role": "villager", "name": "划水", "tendency": "passive", "priority": 1, "weight": 1.0, "prompt_hint": "简短表态过麦"},
+  {"id": "V04", "role": "villager", "name": "支持真预", "tendency": "trust_seer", "priority": 4, "weight": 1.1, "prompt_hint": "站边可信预言家"},
+  {"id": "V05", "role": "villager", "name": "质疑全场", "tendency": "skeptic", "priority": 3, "weight": 0.9, "prompt_hint": "对跳身份均保持质疑"},
+  {"id": "V06", "role": "villager", "name": "归票助手", "tendency": "helper", "priority": 3, "weight": 1.0, "prompt_hint": "帮真预整理归票"}
+]

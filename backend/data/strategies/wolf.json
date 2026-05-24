@@ -1,0 +1,9 @@
+[
+  {"id": "W01", "role": "wolf", "name": "深水狼", "tendency": "low_profile", "priority": 3, "weight": 1.2, "prompt_hint": "低调跟票，少起跳，观察神职"},
+  {"id": "W02", "role": "wolf", "name": "悍跳预言家", "tendency": "fake_seer", "priority": 5, "weight": 0.9, "prompt_hint": "首日出假预抢节奏，报验要自洽"},
+  {"id": "W03", "role": "wolf", "name": "倒钩", "tendency": "backstab", "priority": 4, "weight": 0.8, "prompt_hint": "站边真预，投票帮好人形象"},
+  {"id": "W04", "role": "wolf", "name": "冲锋狼", "tendency": "aggressive", "priority": 5, "weight": 1.0, "prompt_hint": "强势归票抗推可疑好人"},
+  {"id": "W05", "role": "wolf", "name": "怂狼装民", "tendency": "passive", "priority": 2, "weight": 1.3, "prompt_hint": "少说话，跟大票，不暴露"},
+  {"id": "W06", "role": "wolf", "name": "污真预", "tendency": "frame_seer", "priority": 4, "weight": 0.85, "prompt_hint": "给真预发查杀或质疑验人"},
+  {"id": "W07", "role": "wolf", "name": "刀神职", "tendency": "kill_god", "priority": 4, "weight": 1.1, "prompt_hint": "夜晚优先刀 identified 神职"}
+]

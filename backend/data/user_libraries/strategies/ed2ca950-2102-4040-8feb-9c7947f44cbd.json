@@ -1,0 +1,327 @@
+{
+  "id": "ed2ca950-2102-4040-8feb-9c7947f44cbd",
+  "name": "我的策略库",
+  "is_builtin": false,
+  "strategies_by_role": {
+    "wolf": [
+      {
+        "id": "W01",
+        "role": "wolf",
+        "name": "深水狼",
+        "tendency": "low_profile",
+        "priority": 3,
+        "weight": 1.2,
+        "prompt_hint": "低调跟票，少起跳，观察神职"
+      },
+      {
+        "id": "W02",
+        "role": "wolf",
+        "name": "悍跳预言家",
+        "tendency": "fake_seer",
+        "priority": 5,
+        "weight": 0.9,
+        "prompt_hint": "首日出假预抢节奏，报验要自洽"
+      },
+      {
+        "id": "W03",
+        "role": "wolf",
+        "name": "倒钩",
+        "tendency": "backstab",
+        "priority": 4,
+        "weight": 0.8,
+        "prompt_hint": "站边真预，投票帮好人形象"
+      },
+      {
+        "id": "W04",
+        "role": "wolf",
+        "name": "冲锋狼",
+        "tendency": "aggressive",
+        "priority": 5,
+        "weight": 1.0,
+        "prompt_hint": "强势归票抗推可疑好人"
+      },
+      {
+        "id": "W05",
+        "role": "wolf",
+        "name": "怂狼装民",
+        "tendency": "passive",
+        "priority": 2,
+        "weight": 1.3,
+        "prompt_hint": "少说话，跟大票，不暴露"
+      },
+      {
+        "id": "W06",
+        "role": "wolf",
+        "name": "污真预",
+        "tendency": "frame_seer",
+        "priority": 4,
+        "weight": 0.85,
+        "prompt_hint": "给真预发查杀或质疑验人"
+      },
+      {
+        "id": "W07",
+        "role": "wolf",
+        "name": "刀神职",
+        "tendency": "kill_god",
+        "priority": 4,
+        "weight": 1.1,
+        "prompt_hint": "夜晚优先刀 identified 神职"
+      }
+    ],
+    "seer": [
+      {
+        "id": "S01",
+        "role": "seer",
+        "name": "首跳报验",
+        "tendency": "open_day1",
+        "priority": 5,
+        "weight": 1.1,
+        "prompt_hint": "第一天跳身份报验人结果"
+      },
+      {
+        "id": "S02",
+        "role": "seer",
+        "name": "藏预",
+        "tendency": "hidden",
+        "priority": 3,
+        "weight": 1.0,
+        "prompt_hint": "不跳，暗验积累信息"
+      },
+      {
+        "id": "S03",
+        "role": "seer",
+        "name": "查杀优先",
+        "tendency": "kill_claim",
+        "priority": 4,
+        "weight": 1.2,
+        "prompt_hint": "有查杀再跳，归票查杀位"
+      },
+      {
+        "id": "S04",
+        "role": "seer",
+        "name": "归票位",
+        "tendency": "leader",
+        "priority": 5,
+        "weight": 0.9,
+        "prompt_hint": "验人后强力归票"
+      },
+      {
+        "id": "S05",
+        "role": "seer",
+        "name": "反悍跳",
+        "tendency": "counter_fake",
+        "priority": 4,
+        "weight": 1.0,
+        "prompt_hint": "针对假预盘逻辑、报真验"
+      },
+      {
+        "id": "S06",
+        "role": "seer",
+        "name": "末置归票",
+        "tendency": "late_vote",
+        "priority": 3,
+        "weight": 0.85,
+        "prompt_hint": "靠后发言总结归票"
+      }
+    ],
+    "witch": [
+      {
+        "id": "WT01",
+        "role": "witch",
+        "name": "首夜自救",
+        "tendency": "self_heal",
+        "priority": 5,
+        "weight": 1.2,
+        "prompt_hint": "首夜被刀则救，不轻易公开"
+      },
+      {
+        "id": "WT02",
+        "role": "witch",
+        "name": "藏药",
+        "tendency": "hidden",
+        "priority": 3,
+        "weight": 1.1,
+        "prompt_hint": "不轻易交站边，观察局势"
+      },
+      {
+        "id": "WT03",
+        "role": "witch",
+        "name": "开毒抗推",
+        "tendency": "poison",
+        "priority": 4,
+        "weight": 0.9,
+        "prompt_hint": "毒高可疑狼，发言谨慎"
+      },
+      {
+        "id": "WT04",
+        "role": "witch",
+        "name": "银水起跳",
+        "tendency": "reveal_saved",
+        "priority": 4,
+        "weight": 0.8,
+        "prompt_hint": "被救后选择性公开信息"
+      },
+      {
+        "id": "WT05",
+        "role": "witch",
+        "name": "跟随真预",
+        "tendency": "follow_seer",
+        "priority": 3,
+        "weight": 1.0,
+        "prompt_hint": "站边可信预言家，毒对立面"
+      }
+    ],
+    "hunter": [
+      {
+        "id": "H01",
+        "role": "hunter",
+        "name": "藏枪",
+        "tendency": "hidden",
+        "priority": 4,
+        "weight": 1.2,
+        "prompt_hint": "不暴露身份，盘逻辑"
+      },
+      {
+        "id": "H02",
+        "role": "hunter",
+        "name": "跳枪威慑",
+        "tendency": "reveal",
+        "priority": 3,
+        "weight": 0.8,
+        "prompt_hint": "表明猎人身份威慑狼人"
+      },
+      {
+        "id": "H03",
+        "role": "hunter",
+        "name": "带走归票",
+        "tendency": "shoot_suspect",
+        "priority": 5,
+        "weight": 1.0,
+        "prompt_hint": "若出局开枪带走最高可疑"
+      },
+      {
+        "id": "H04",
+        "role": "hunter",
+        "name": "跟风投票",
+        "tendency": "follow",
+        "priority": 2,
+        "weight": 1.1,
+        "prompt_hint": "白天跟主流票型"
+      },
+      {
+        "id": "H05",
+        "role": "hunter",
+        "name": "质疑悍跳",
+        "tendency": "anti_fake",
+        "priority": 4,
+        "weight": 0.9,
+        "prompt_hint": "重点质疑假预言家"
+      }
+    ],
+    "guard": [
+      {
+        "id": "G01",
+        "role": "guard",
+        "name": "守预",
+        "tendency": "protect_seer",
+        "priority": 5,
+        "weight": 1.2,
+        "prompt_hint": "优先守自称预言家"
+      },
+      {
+        "id": "G02",
+        "role": "guard",
+        "name": "自守",
+        "tendency": "self_guard",
+        "priority": 4,
+        "weight": 1.0,
+        "prompt_hint": "首夜或关键夜自守"
+      },
+      {
+        "id": "G03",
+        "role": "guard",
+        "name": "轮守",
+        "tendency": "rotate",
+        "priority": 3,
+        "weight": 1.1,
+        "prompt_hint": "按座位轮守不同目标"
+      },
+      {
+        "id": "G04",
+        "role": "guard",
+        "name": "守银水",
+        "tendency": "protect_healed",
+        "priority": 4,
+        "weight": 0.9,
+        "prompt_hint": "守可能被救或高价值位"
+      },
+      {
+        "id": "G05",
+        "role": "guard",
+        "name": "藏身份",
+        "tendency": "hidden",
+        "priority": 2,
+        "weight": 1.0,
+        "prompt_hint": "白天不暴露守卫身份"
+      }
+    ],
+    "villager": [
+      {
+        "id": "V01",
+        "role": "villager",
+        "name": "逻辑盘",
+        "tendency": "analyze",
+        "priority": 4,
+        "weight": 1.2,
+        "prompt_hint": "盘票型与发言矛盾"
+      },
+      {
+        "id": "V02",
+        "role": "villager",
+        "name": "跟风",
+        "tendency": "follow",
+        "priority": 2,
+        "weight": 1.3,
+        "prompt_hint": "跟多数票，少扛推"
+      },
+      {
+        "id": "V03",
+        "role": "villager",
+        "name": "划水",
+        "tendency": "passive",
+        "priority": 1,
+        "weight": 1.0,
+        "prompt_hint": "简短表态过麦"
+      },
+      {
+        "id": "V04",
+        "role": "villager",
+        "name": "支持真预",
+        "tendency": "trust_seer",
+        "priority": 4,
+        "weight": 1.1,
+        "prompt_hint": "站边可信预言家"
+      },
+      {
+        "id": "V05",
+        "role": "villager",
+        "name": "质疑全场",
+        "tendency": "skeptic",
+        "priority": 3,
+        "weight": 0.9,
+        "prompt_hint": "对跳身份均保持质疑"
+      },
+      {
+        "id": "V06",
+        "role": "villager",
+        "name": "归票助手",
+        "tendency": "helper",
+        "priority": 3,
+        "weight": 1.0,
+        "prompt_hint": "帮真预整理归票"
+      }
+    ]
+  },
+  "created_at": "2026-05-24T06:34:02.961808+00:00",
+  "updated_at": "2026-05-24T06:34:02.961808+00:00"
+}

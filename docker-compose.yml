@@ -1,0 +1,33 @@
+# 0523 十人狼人杀 — 后端 API + WebSocket（可选挂载前端 dist）
+#
+# 启动后端（含内置人格/策略与用户库持久化）:
+#   docker compose up --build werewolf-backend
+#
+services:
+  werewolf-backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - backend/.env
+    environment:
+      CORS_ORIGINS: "http://localhost:5173,http://localhost:8000"
+      GAME_MAX_DURATION_SECONDS: "1800"
+      SERVE_FRONTEND_DIST: "true"
+    volumes:
+      # 复盘、内置 data、用户人格/策略库 均持久化到宿主机
+      - ./backend/app/data/replays:/app/app/data/replays
+      - ./backend/data:/app/data
+
+  werewolf-frontend-dev:
+    image: node:20-alpine
+    working_dir: /app
+    # 与宿主机共享网络，Vite 代理 localhost:8000 才能连到本机 uvicorn
+    network_mode: host
+    volumes:
+      - ./frontend:/app
+    command: sh -c "npm install && npx vite --host 127.0.0.1"
+    profiles:
+      - dev

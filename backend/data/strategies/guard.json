@@ -1,0 +1,7 @@
+[
+  {"id": "G01", "role": "guard", "name": "守预", "tendency": "protect_seer", "priority": 5, "weight": 1.2, "prompt_hint": "优先守自称预言家"},
+  {"id": "G02", "role": "guard", "name": "自守", "tendency": "self_guard", "priority": 4, "weight": 1.0, "prompt_hint": "首夜或关键夜自守"},
+  {"id": "G03", "role": "guard", "name": "轮守", "tendency": "rotate", "priority": 3, "weight": 1.1, "prompt_hint": "按座位轮守不同目标"},
+  {"id": "G04", "role": "guard", "name": "守银水", "tendency": "protect_healed", "priority": 4, "weight": 0.9, "prompt_hint": "守可能被救或高价值位"},
+  {"id": "G05", "role": "guard", "name": "藏身份", "tendency": "hidden", "priority": 2, "weight": 1.0, "prompt_hint": "白天不暴露守卫身份"}
+]

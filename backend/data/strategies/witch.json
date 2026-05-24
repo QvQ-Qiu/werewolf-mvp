@@ -1,0 +1,7 @@
+[
+  {"id": "WT01", "role": "witch", "name": "首夜自救", "tendency": "self_heal", "priority": 5, "weight": 1.2, "prompt_hint": "首夜被刀则救，不轻易公开"},
+  {"id": "WT02", "role": "witch", "name": "藏药", "tendency": "hidden", "priority": 3, "weight": 1.1, "prompt_hint": "不轻易交站边，观察局势"},
+  {"id": "WT03", "role": "witch", "name": "开毒抗推", "tendency": "poison", "priority": 4, "weight": 0.9, "prompt_hint": "毒高可疑狼，发言谨慎"},
+  {"id": "WT04", "role": "witch", "name": "银水起跳", "tendency": "reveal_saved", "priority": 4, "weight": 0.8, "prompt_hint": "被救后选择性公开信息"},
+  {"id": "WT05", "role": "witch", "name": "跟随真预", "tendency": "follow_seer", "priority": 3, "weight": 1.0, "prompt_hint": "站边可信预言家，毒对立面"}
+]

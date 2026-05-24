@@ -1,0 +1,8 @@
+[
+  {"id": "S01", "role": "seer", "name": "首跳报验", "tendency": "open_day1", "priority": 5, "weight": 1.1, "prompt_hint": "第一天跳身份报验人结果"},
+  {"id": "S02", "role": "seer", "name": "藏预", "tendency": "hidden", "priority": 3, "weight": 1.0, "prompt_hint": "不跳，暗验积累信息"},
+  {"id": "S03", "role": "seer", "name": "查杀优先", "tendency": "kill_claim", "priority": 4, "weight": 1.2, "prompt_hint": "有查杀再跳，归票查杀位"},
+  {"id": "S04", "role": "seer", "name": "归票位", "tendency": "leader", "priority": 5, "weight": 0.9, "prompt_hint": "验人后强力归票"},
+  {"id": "S05", "role": "seer", "name": "反悍跳", "tendency": "counter_fake", "priority": 4, "weight": 1.0, "prompt_hint": "针对假预盘逻辑、报真验"},
+  {"id": "S06", "role": "seer", "name": "末置归票", "tendency": "late_vote", "priority": 3, "weight": 0.85, "prompt_hint": "靠后发言总结归票"}
+]

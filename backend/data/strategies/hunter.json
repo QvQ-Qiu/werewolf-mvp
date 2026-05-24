@@ -1,0 +1,7 @@
+[
+  {"id": "H01", "role": "hunter", "name": "藏枪", "tendency": "hidden", "priority": 4, "weight": 1.2, "prompt_hint": "不暴露身份，盘逻辑"},
+  {"id": "H02", "role": "hunter", "name": "跳枪威慑", "tendency": "reveal", "priority": 3, "weight": 0.8, "prompt_hint": "表明猎人身份威慑狼人"},
+  {"id": "H03", "role": "hunter", "name": "带走归票", "tendency": "shoot_suspect", "priority": 5, "weight": 1.0, "prompt_hint": "若出局开枪带走最高可疑"},
+  {"id": "H04", "role": "hunter", "name": "跟风投票", "tendency": "follow", "priority": 2, "weight": 1.1, "prompt_hint": "白天跟主流票型"},
+  {"id": "H05", "role": "hunter", "name": "质疑悍跳", "tendency": "anti_fake", "priority": 4, "weight": 0.9, "prompt_hint": "重点质疑假预言家"}
+]

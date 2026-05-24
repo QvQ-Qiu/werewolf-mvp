@@ -1,0 +1,19 @@
+# 前端
+node_modules/
+dist/
+.vite/
+
+# 后端
+.venv/
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+.pytest_cache/
+
+# 复盘数据
+backend/app/data/replays/
+
+# IDE
+.vscode/
+.idea/

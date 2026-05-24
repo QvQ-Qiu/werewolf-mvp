@@ -1,0 +1,73 @@
+# OpenClaw Agent Configuration — 狼人杀后端
+# 将此文件引入 OpenClaw Agent 配置中即可使用狼人杀 Skill + Coze CLI
+name: werewolf
+version: "0.1.0"
+description: "十人狼人杀 AI 对局服务 + Coze CLI — 支持创建/管理/模拟狼人杀游戏，以及 Coze CLI 认证/生成/项目/文件操作"
+base_url: "http://localhost:8000"
+tools:
+  # ── 狼人杀 Skill ──
+  - name: create_game
+    description: "创建新的十人狼人杀对局，返回对局 ID 和玩家信息"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: get_game_state
+    description: "获取指定对局的当前状态"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: list_games
+    description: "列出所有活跃对局"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: get_public_log
+    description: "获取指定对局的公共日志"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: submit_vote
+    description: "提交放逐投票"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: health_check
+    description: "检查后端服务是否健康"
+    endpoint: /openclaw/execute
+    method: POST
+  # ── Coze CLI Skill ──
+  - name: coze_check_installed
+    description: "检查 coze CLI 是否已安装"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_auth_status
+    description: "检查 Coze 登录状态"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_config_list
+    description: "查看 Coze CLI 配置"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_organization_list
+    description: "列出可用组织"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_space_list
+    description: "列出可用空间"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_generate_image
+    description: "使用 Coze CLI 生成图片"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_generate_audio
+    description: "使用 Coze CLI 文本转语音"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_file_upload
+    description: "上传文件到 Coze 获取在线 URL"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_code_project_create
+    description: "创建 Coze Coding 项目"
+    endpoint: /openclaw/execute
+    method: POST
+  - name: coze_code_message_send
+    description: "发送需求消息到 Coze 项目"
+    endpoint: /openclaw/execute
+    method: POST

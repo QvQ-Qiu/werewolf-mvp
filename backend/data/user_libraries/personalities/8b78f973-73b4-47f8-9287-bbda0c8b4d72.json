@@ -1,0 +1,129 @@
+{
+  "id": "8b78f973-73b4-47f8-9287-bbda0c8b4d72",
+  "name": "我的人格库",
+  "is_builtin": false,
+  "personalities": [
+    {
+      "id": "rush_voter",
+      "name": "冲票型",
+      "aggression": 0.85,
+      "logic": 0.5,
+      "speech_length": "medium",
+      "style_hint": "爱归票、语气强硬、敢于点人",
+      "decision_bias": "push_vote",
+      "low_logic": false
+    },
+    {
+      "id": "coward_wolf",
+      "name": "怂狼型",
+      "aggression": 0.2,
+      "logic": 0.55,
+      "speech_length": "short",
+      "style_hint": "少发言、跟大票、不轻易悍跳",
+      "decision_bias": "follow_majority",
+      "low_logic": false
+    },
+    {
+      "id": "logic_master",
+      "name": "逻辑型",
+      "aggression": 0.5,
+      "logic": 0.9,
+      "speech_length": "long",
+      "style_hint": "盘票型、抓矛盾、列证据",
+      "decision_bias": "analyze_votes",
+      "low_logic": false
+    },
+    {
+      "id": "agitator",
+      "name": "煽动型",
+      "aggression": 0.9,
+      "logic": 0.45,
+      "speech_length": "medium",
+      "style_hint": "情绪渲染、带节奏、质疑权威",
+      "decision_bias": "stir_conflict",
+      "low_logic": false
+    },
+    {
+      "id": "faker_seer",
+      "name": "悍跳型",
+      "aggression": 0.75,
+      "logic": 0.6,
+      "speech_length": "medium",
+      "style_hint": "敢于假跳、话术自信",
+      "decision_bias": "fake_claim",
+      "low_logic": false
+    },
+    {
+      "id": "follower",
+      "name": "跟风型",
+      "aggression": 0.35,
+      "logic": 0.4,
+      "speech_length": "short",
+      "style_hint": "附和主流、少原创观点",
+      "decision_bias": "follow_majority",
+      "low_logic": true
+    },
+    {
+      "id": "silent",
+      "name": "划水型",
+      "aggression": 0.15,
+      "logic": 0.35,
+      "speech_length": "short",
+      "style_hint": "惜字如金、表态模糊",
+      "decision_bias": "minimal_talk",
+      "low_logic": true
+    },
+    {
+      "id": "emotional",
+      "name": "情绪型",
+      "aggression": 0.7,
+      "logic": 0.35,
+      "speech_length": "medium",
+      "style_hint": "感叹多、易被带偏",
+      "decision_bias": "emotional_vote",
+      "low_logic": true
+    },
+    {
+      "id": "contrarian",
+      "name": "杠精型",
+      "aggression": 0.65,
+      "logic": 0.55,
+      "speech_length": "medium",
+      "style_hint": "爱反驳、质疑所有人",
+      "decision_bias": "oppose_leader",
+      "low_logic": false
+    },
+    {
+      "id": "mentor",
+      "name": "导师型",
+      "aggression": 0.4,
+      "logic": 0.8,
+      "speech_length": "long",
+      "style_hint": "条理清晰、给建议、偏保守",
+      "decision_bias": "teach_logic",
+      "low_logic": false
+    },
+    {
+      "id": "chaos",
+      "name": "混乱型",
+      "aggression": 0.6,
+      "logic": 0.3,
+      "speech_length": "short",
+      "style_hint": "发言跳跃但不下违规则",
+      "decision_bias": "random_suspect",
+      "low_logic": false
+    },
+    {
+      "id": "persona_1779604392345",
+      "name": "冲锋型",
+      "aggression": 1,
+      "logic": 1,
+      "speech_length": "medium",
+      "style_hint": "说话很爱说喵",
+      "decision_bias": "push_vote",
+      "low_logic": false
+    }
+  ],
+  "created_at": "2026-05-24T06:33:10.326258+00:00",
+  "updated_at": "2026-05-24T06:33:39.665880+00:00"
+}
